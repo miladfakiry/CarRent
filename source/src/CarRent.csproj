@@ -8,6 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Customer\**" />
+    <Compile Remove="Rent\**" />
+    <Content Remove="Customer\**" />
+    <Content Remove="Rent\**" />
+    <EmbeddedResource Remove="Customer\**" />
+    <EmbeddedResource Remove="Rent\**" />
+    <None Remove="Customer\**" />
+    <None Remove="Rent\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
       <PrivateAssets>all</PrivateAssets>
@@ -18,8 +29,6 @@
 
   <ItemGroup>
     <Folder Include="Car\API\v1\" />
-    <Folder Include="Customer\" />
-    <Folder Include="Rent\" />
   </ItemGroup>
 
 </Project>
