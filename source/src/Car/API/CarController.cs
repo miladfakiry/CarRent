@@ -39,6 +39,15 @@ namespace CarRent.Car.API
                     Brand = "Nissan",
                     Type = "Limousine",
                     CarClass = "Standard"
+                },
+
+                new CarResponseDto
+                {
+                    CarId = Guid.NewGuid(),
+                    CarNumber = "HGB66",
+                    Brand = "VW",
+                    Type = "Limousine",
+                    CarClass = "Standard"
                 }
             };
         }
