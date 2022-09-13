@@ -1,8 +1,13 @@
-﻿namespace CarRent.Car.Domain
+﻿using CarRent.Common.Domain;
+
+namespace CarRent.Car.Domain
 {
-    public class Brand
+    public class Brand : Entity
     {
-        public Guid Id { get; }
+        public Brand(Guid id) : base(id)
+        {
+        }
+        public string Name { get; }
 
     }
 }
