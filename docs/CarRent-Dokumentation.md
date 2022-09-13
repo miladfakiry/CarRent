@@ -24,33 +24,31 @@ Gesamtkosten berechnet. Wird die Reservation gespeichert, so wird sie mit einer 
 ablegt.
 - Bei Abholung des Autos wird die Reservation in einen Mietvertrag umgewandelt.
 
-#### UC 01: CRUD & Search Customers
+#### Use Case 1: CRUD & Search Customers
 Der Sachbearbeiter kann Kunden im System verwalten (CRUD).
 
-#### UC 02: Search Customers
+#### Use Case 2: Search Customers
 Der Sachbearbeiter ist in der Lage die Kunden im System zu suchen und zu finden.
 
-#### UC 03: CRUD Cars
+#### Use Case 3: CRUD Cars
 Der Sachbearbeiter verwaltet Fahrzeuge im System (CRUD). Der Sachbearbeiter kann Fahrzeuge einer bestimmten Klasse (Luxusklasse, Mittelklasse, Einfachklasse), Marke, Typ und eindeutiger ID zuweisen.
 
-#### UC 04: Search Cars
+#### Use Case 4: Search Cars
 Der Sachbearbeiter sucht und findet Fahrzeuge im System mittels derer ID.
 
-#### UC 05: Daily Fee
+#### Use Case 5: Daily Fee
 Der Sachbearbeiter kann der Fahrzeugklasse eine Tagesgebühr zuweisen.
 
-#### UC 06: Reservation
+#### Use Case 6: Reservation
 Der Kunde kann eine Reservation auf eine bestimmte Fahrzeugklasse mit einer bestimmten Anzahl Tage erstellen. Die Gesamtkosten werden vom System automatisch berechnet. Beim Speichern der Reservation wird durch das System eine Reservationsnummer vergeben.
 
-#### UC 07: Contract creation
+#### Use Case 7: Contract creation
 Das System erstellt einen Mietvertrag basierend auf der Reservation, sobald der Kunde das Fahrzeug abholt.
 
 ### Qualitätsziele
-| Priorität | Qualitätsziel | Szenario |
-|----------|:---------:|:---------:|
-| 1 | Perfomante User Experience| Interaktion mit Webseite |
-| 2 | Data Consistency | Ausfall von Server darf nicht zu Datenverlust führen |
-| 3 | System availability | Auch bei Ausfall eines Servers soll System innerhalb von 2 Minuten wieder verfügbar sein |
+#### Priorität
+- System Verfügbarkeit: Auch bei einem Ausfall vom System, soll die Applikation innerhalb 3 Minuten verfügbar sein.
+- Daten Konsistenz: Bei einem Ausfall darf kein Datenverlust passieren.
 
 ### Stakeholder
 | Rolle | Kontakt | Erwartungshaltung |
