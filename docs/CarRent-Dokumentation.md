@@ -5,24 +5,24 @@
 ### Aufgabenstellung
 Es soll ein neues Autovermietungssystem „CarRent“ erstellt werden. Das System soll aus einem Server-Teil und
 optional einen Web-Client bestehen.
-a) Die Daten sollen mittels Repository Pattern in eine Datenbank gespeichert werden können.
-b) Die Business Logik soll auf dem Backend laufen und eine REST APIs anbieten.
-c) Es soll zuerst ein Monolith erstellt werden und später auf eine Micro Service Architektur überführt
+- Die Daten sollen mittels Repository Pattern in eine Datenbank gespeichert werden können.
+- Die Business Logik soll auf dem Backend laufen und eine REST APIs anbieten.
+- Es soll zuerst ein Monolith erstellt werden und später auf eine Micro Service Architektur überführt
 werden.
 Optional:
-d) Der Web-Client benutzt die REST API um die Funktionen auszuführen.
+- Der Web-Client benutzt die REST API um die Funktionen auszuführen.
 Folgende Detailinformationen liegen unstrukturiert über das zu entwickelnde System vor:
-• Der Sachbearbeiter kann Kunden mit Namen und Adresse und Kundennummer im System verwalten,
+- Der Sachbearbeiter kann Kunden mit Namen und Adresse und Kundennummer im System verwalten,
 d.h. erfassen, bearbeiten, löschen und den Kunden mit dessen Namen oder Kundennummer suchen.
-• Der Sachbearbeiter kann zudem die Autos von CarRent verwalten und nach denen suchen.
-• Jedes Auto kann einer bestimmten Klasse zwischen Luxusklasse, Mittelklasse oder Einfachklasse
+- Der Sachbearbeiter kann zudem die Autos von CarRent verwalten und nach denen suchen.
+- Jedes Auto kann einer bestimmten Klasse zwischen Luxusklasse, Mittelklasse oder Einfachklasse
 zugeordnet werden und besitzt zudem eine Marke, einen Typ und eine eindeutige Identifikation.
-• Jede Klasse besitzt eine Tagesgebühr.
-• Bei einer neuen Reservation kann der Kunde ein Auto aus einer bestimmten Klasse wählen. Er muss
+- Jede Klasse besitzt eine Tagesgebühr.
+- Bei einer neuen Reservation kann der Kunde ein Auto aus einer bestimmten Klasse wählen. Er muss
 zudem die Anzahl der Tage angeben, die er das Auto gerne mieten möchte. Dabei werden die
 Gesamtkosten berechnet. Wird die Reservation gespeichert, so wird sie mit einer Reservationsnummer
 ablegt.
-• Bei Abholung des Autos wird die Reservation in einen Mietvertrag umgewandelt.
+- Bei Abholung des Autos wird die Reservation in einen Mietvertrag umgewandelt.
 
 #### UC 01: CRUD & Search Customers
 Der Sachbearbeiter kann Kunden im System verwalten (CRUD).
@@ -55,7 +55,7 @@ Das System erstellt einen Mietvertrag basierend auf der Reservation, sobald der 
 ### Stakeholder
 | Rolle | Kontakt | Erwartungshaltung |
 |----------|:---------:|:---------:|
-| Lehrperson | Cedric Menzi | Dokumentation nach arc42 |
+| Lehrperson | Cédric Menzi | Dokumentation nach arc42 |
 
 ## Randbedingungen
 - Die Daten sollen mittels Repository Pattern in eine Datenbank gespeichert werden können.
@@ -74,27 +74,27 @@ Das System erstellt einen Mietvertrag basierend auf der Reservation, sobald der 
 
 ## Modelle
 ### Context
-![Context Diagram](images/Aufgaben/Context.PNG)
+![Context Diagram](images/Aufgaben/Context.png)
 
 ### Containers
-![Containers Diagram](images/Aufgaben/Containers.PNG)
+![Containers Diagram](images/Aufgaben/Containers.png)
 
 ### Components
-![Components Diagram](images/Aufgaben/Components.PNG)
+![Components Diagram](images/Aufgaben/Components.png)
 
 ### Classes
-![Class Diagram](images/Aufgaben/Classes.PNG)
+![Class Diagram](images/Aufgaben/Classes.png)
 
 ## Domain Model
-![Domain Model](images/Aufgaben/DomainModel.PNG)
+![Domain Model](images/Aufgaben/DomainModel.png)
 
 ## Whitebox Gesamtsystem
 ### Class Diagram
 ![Class Diagram](images/Aufgaben/Class_Diagram.png)
 
 ### Component Diagram - Interfaces
-![Component Diagram](images/Aufgaben/Component_Diagram.PNG)
+![Component Diagram](images/Aufgaben/Component_Diagram.png)
 
 ## Verteilungssicht
 ### Deployement View
-![Deployment View](images/Aufgaben/Deployment_View.PNG)
+![Deployment View](images/Aufgaben/Deployment_View.png)
